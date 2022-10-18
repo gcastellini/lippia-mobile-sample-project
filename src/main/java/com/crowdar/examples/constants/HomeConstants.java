@@ -7,5 +7,8 @@ public class HomeConstants {
     public static final String CAMERA_BUTTON_LOCATOR = "ACCESSIBILITY_ID:cameraButtonHome";
     public static final String PHONE_INPUT_LOCATOR = "ACCESSIBILITY_ID:phoneInputHome";
 
+    public static final String ADD_ENTRIES_BUTTON="ACCESSIBILITY_ID:Add time entry";
+
+
     public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Home page is not displayed.";
 }

@@ -6,6 +6,8 @@ import com.crowdar.examples.constants.HomeConstants;
 import com.crowdar.examples.services.HomeService;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 
 /**
  * This class handles the steps in the features files and connects with the service in case of having business logic.
@@ -27,5 +29,10 @@ public class HomeSteps extends PageSteps {
     public void doSignOut() {
         MobileActionManager.click(HomeConstants.SIGN_OUT_BUTTON_LOCATOR);
     }
+
+    @Given("The user clicks on add button")
+    public void addTime(){MobileActionManager.click(HomeConstants.ADD_ENTRIES_BUTTON);}
+
+
 
 }
