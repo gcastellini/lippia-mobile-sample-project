@@ -35,7 +35,7 @@
                 <cucumber.runner>testng.xml</cucumber.runner>
                 <crowdar.avd></crowdar.avd>
                 <crowdar.appLocation>C:\\\\Crowdar\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Giuliana Castellini - Clockify.apk</crowdar.appLocation>
-                <crowdar.deviceName>moto</crowdar.deviceName>
+                <crowdar.deviceName>moto 9</crowdar.deviceName>
             </properties>
         </profile>
         <profile>
