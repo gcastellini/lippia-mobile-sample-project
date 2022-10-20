@@ -13,17 +13,17 @@ Feature: As a potential client i want to interact with the mobile application
 
   @prueba
   Scenario Outline: The user adds time entry
-    When Login page is displayed
-    And The user logs in the application with: <email>, <password>
-    Then Home page is displayed
+    When The user logs in the application with: <email>, <password>
+    And Home page is displayed
     Given The user clicks on add button
     And Time Entry page is displayed
     When The user clicks on Start End Layout
+    And The user selects day <day>
     And The user sets start hour time <hour>, <minute>
-    And The user sets end hour time <12>, <20>
+    And The user sets end hour time 12, 20
     Then A time entry is displayed
     @Demo
     Examples:
-      | email                           | password | hour | minute |
-      | giuliana_castellini@hotmail.com | hola1234 | 10   | 20     |
+      | email                           | password | hour | minute | day|
+      | giuliana_castellini@hotmail.com | hola1234 | 10   | 20     |18 octubre 2022|
 

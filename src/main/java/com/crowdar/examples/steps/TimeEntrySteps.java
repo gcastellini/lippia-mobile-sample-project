@@ -18,6 +18,9 @@ public class TimeEntrySteps extends PageSteps {
         TimeEntryService.isViewLoaded();
     }
 
+    @And("The user selects day (.*)$")
+    public void daySelect(String day){TimeEntryService.pickDay(day);}
+
     @When("^The user sets start hour time (.*), (.*)$")
     public void enterStartTime(String hour,String minute){
         TimeEntryService.hourEntryStart(hour,minute);
